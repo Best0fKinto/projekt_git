@@ -11,3 +11,9 @@ if [ "$1" == "--logs" ]; then
     echo "Log $i, created by $0 on $(date)" > log_$i.txt
   done
 fi
+if [ "$1" == "--help" ]; then
+  echo "Available options:"
+  echo "--date: Displays the current date"
+  echo "--logs [number]: Creates [number] log files"
+  echo "--help: Displays this help message"
+fi
